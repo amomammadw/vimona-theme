@@ -5,11 +5,8 @@
     <?php while(have_posts()):the_post(); ?>
     <article class="post">
         <h3>
-            <a href="<?php the_permalink() ?>">
-                <?php the_title();?>
-            </a>
+            <?php the_title();?>
         </h3>
-        <?php the_post_thumbnail( 'large' ); ?>
         <p><?php the_content(); ?></p>
         <b>نویسنده : <?php the_author(); ?></b>
         <b>تاریخ : <?php the_time(); ?></b>
