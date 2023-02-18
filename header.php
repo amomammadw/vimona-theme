@@ -16,4 +16,15 @@
             <h1><a class="text-white" href="<?php get_home_url(); ?>"><?php bloginfo( 'name' ) ?></a></h1>
             <h4><?php bloginfo( 'description' ) ?></h4>
         </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <?php  
+            $args = array(
+                'theme_location'=>'primary'
+            );
+            ?>
+                <?php wp_nav_menu( $args ) ?>
+            </div>
+        </nav>
     </header>
